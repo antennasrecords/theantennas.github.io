@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Antennas — Acid Westerns</title>
     <style>
+      /* Basic setup */
       html, body {
         margin: 0;
         padding: 0;
-        background-color: #fdfcf8;
-        color: #111;
-        font-family: 'Courier New', Courier, monospace;
+        background: linear-gradient(135deg, #f7ede2, #f0dac8);
+        color: #222;
+        font-family: Georgia, serif;
         text-align: center;
       }
 
@@ -18,48 +19,67 @@
         max-width: 700px;
         margin: 80px auto;
         padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 16px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       }
 
       img {
-        width: 100%;
-        max-width: 500px;
-        border: 2px solid #111;
+        width: 70%;
+        max-width: 380px;
+        border: 2px solid #222;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: transform 0.2s ease;
+      }
+
+      img:hover {
+        transform: scale(1.02);
       }
 
       h1 {
         font-weight: normal;
-        margin-top: 40px;
-        font-size: 32px;
-        letter-spacing: 1px;
+        margin-top: 35px;
+        font-size: 34px;
+        letter-spacing: 0.5px;
       }
 
       h2 {
         font-weight: normal;
         margin-top: 5px;
         font-size: 22px;
-        color: #444;
+        color: #555;
+        font-style: italic;
       }
 
-      a {
-        display: inline-block;
+      .button-group {
         margin-top: 40px;
-        padding: 12px 24px;
-        border: 2px solid #111;
-        color: #111;
+      }
+
+      a.button {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 26px;
+        border: 2px solid #222;
+        color: #222;
         text-decoration: none;
         font-size: 18px;
-        transition: 0.2s ease;
+        letter-spacing: 0.5px;
+        border-radius: 6px;
+        background-color: #fdf7f3;
+        transition: all 0.25s ease;
       }
 
-      a:hover {
-        background-color: #111;
-        color: #fdfcf8;
+      a.button:hover {
+        background-color: #222;
+        color: #fdf7f3;
+        transform: scale(1.04);
       }
 
       footer {
-        margin-top: 80px;
+        margin-top: 60px;
         font-size: 13px;
-        color: #555;
+        color: #666;
       }
     </style>
   </head>
@@ -68,8 +88,12 @@
     <div class="container">
       <img src="acidwesterns-cover.jpg" alt="Acid Westerns Album Cover">
       <h1>The Antennas</h1>
-      <h2><em>Acid Westerns</em></h2>
-      <a href="https://yourpreorderlink.com" target="_blank">Pre-Order Vinyl</a>
+      <h2>Acid Westerns</h2>
+
+      <div class="button-group">
+        <a class="button" href="https://yourpreorderlink.com" target="_blank">Pre-Order Vinyl</a>
+        <a class="button" href="https://yourlinktree.com" target="_blank">Listen Now</a>
+      </div>
 
       <footer>
         © 2025 The Antennas
